@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Commandes linux</title>
+  </head>
+  <nav>
+    <ul>
+      <li><a href="index.html">Ligne de commande</a></li>
+      <li><a href="commandes.html">Linux</a></li>
+      <li><a href="nano.html">Nano</a></li>
+      <li><a href="git.html">Git/Github</a></li>
+      <li><a href="html.html">html</a></li>
+    </ul>
+  </nav>
+  <body>
+    <h1>Les lignes de commande</h1>
+    <p>http://juliend.github.io/linux-cheatsheet/#chown</p>
+    <table>
+      <h2>ls</h2>
+      <p>La commande ls permet d'afficher le conttenu d'un répertoire.</p>
+      <tr><td>Afficher les informations de manière détaillée.</td><td>ls -l</td></tr>
+      <tr><td>Afficher les fichiers cachés.</td><td>ls -a</td></tr>
+      <tr><td>Afficher la taille des fichiers de façon lisible.</td><td>ls -h</td></tr>
+      <tr><td>Tri inversé.</td><td>ls -r</td></tr>
+      <tr><td>Trier les fichiers par date du plus récent au plus ancien.</td><td>ls -t</td></tr>
+      <tr><td>Trier par taille décroissante.</td><td>ls -S</td></tr>
+      <tr><td>Afficher tous les fichiers y compris les fichiers cachés</td><td>ls -la</td></tr>
+      <tr><td>Afficher les informations des fichiers, avec des tailles lisibles le tout ordonné du plus grand au plus petit.</td><td> </td></tr>
+    </table>
+    <table>
+      <h2>cd</h2>
+      <p>La navigation d’un répertoire à un autre s’effectue avec la commande cd succédée du nom du répertoire.</p>
+      <tr><td>Permet de se retrouver à la racine du disque.</td><td>cd /</td></tr>
+      <tr><td>Accéder directement au répertoire de l'utilisateur.</td><td>cd ~ <br />ou<br />cd</td></tr>
+      <tr><td>Aller dans le répertoir /var/www.</td><td>cd /var/www/</td></tr>
+      <tr><td>Remonter dans le répertoire parent à partir de là ou vous etes.</td><td>cd ..</td></tr>
+      <tr><td>Permet de revenir au répertoire précédent.</td><td>cd -</td></tr>
+      <tr><td>Renvoyer le chemin absolu du répertoire courant ce qui est utile puiqu'en général
+         le shell n'affiche que<br /> le nom du répertoire courant.</td><td>pwd</td></tr>
+    </table>
+    <table>
+      <h2>cp</h2>
+      <p>Pourcréer une copie d'un fichier, on utilise la commande cp.</p>
+      <tr><td>Copier le fichier bar.txt dans le répertoire baz.</td><td>cp foo/bar.txt baz/</td></tr>
+      <tr><td>Copier des répertoires entiers(note: si baz existe, la cible sera baz/foo/).</td><td>c -r foo/ baz/</td></tr>
+    </table>
+    <table>
+      <h2>mv</h2>
+      <p>Déplacer un fichier est aussi simple que de le copier, pour cela il faut utiliser
+         la commande mv. Cette commande permet aussi de renommer vos fichiers.</p>
+      <tr><td>Déplacer le fichier bar.txt dans le répertoire baz.</td><td>mv foo/bar.txt baz/</td></tr>
+      <tr><td>Renommer le fichier foo_bar.txt en foo_baz.txt.</td><td>mv foo_bar.txt foo_baz.txt</td></tr>
+    </table>
+    <table>
+      <h2>rm</h2>
+      <p>Pour éffacer un fichier ou un répertoire on utilise la commande rm</p>
+      <tr><td>Supprimer tout les fichiers ayant pour extension txt.</td><td>rm *.txt</td></tr>
+      <tr><td>Supprimer les fichiers foo.txt et bar.txt.</td><td>rm foo.txt bar.txt</td></tr>
+      <tr><td>Supprimer le répertoire baz et tout son contenu.</td><td>rm -rf baz/</td></tr>
+    </table>
+    <table>
+      <h2>mkdir</h2>
+      <p>Pour créer un répertoire il suffit d’utiliser la commande mkdir. Celle-ci vous permettra<br />
+         de créer un répertoire à l’emplacement où vous êtes ou l’emplacement précisé en argument de la commande.</p>
+      <tr><td>Retourner des informations lors de la création d'un répertoire.</td><td>mkdir -v</td></tr>
+      <tr><td>Cette oprtion permet de créer une arborescence complète.</td><td>mkdir -p</td></tr>
+      <tr><td>Créer le répertoire foo.</td><td>mkdir foo</td></tr>
+      <tr><td>Créer les répertoires foo et /tmp/bar.</td><td>mkdir -v foo /tmp/bar</td></tr>
+      <tr><td>Créer l'arborescence foo/bar/baz.</td><td>mkdir -p foo/bar/baz</td></tr>
+    </table>
+    <table>
+      <h2>chown</h2>
+      <p>La commande chown permet de changer le propriétaire d'un fichier ou d'un répertoire.</p>
+      <tr><td>Attribuer l'utilisation bob et le groupe admin au fichier foo.txt</td><td>chown bob:admin foo.txt</td></tr>
+    </table>
+    <table>
+      <h2>chmod</h2>
+      <p>La commande chmod permet de changer les droits d'un fichier ou d'un répertoire.<br />
+        Pour exécuter cette commande vous devez être le propriétaire du fichier ou être logué en root.</p>
+      <tr><td>Ajouter les droits d'écriture au propriétaire (user, write)</td><td>chmod u+w fichier</td></tr>
+      <tr><td>Ajouter les droits de lecture au groupe du fichier (group, read)</td><td>chmod g+r fichier</td></tr>
+      <tr><td>Supprimer les droits d'exécution aux autres utilisateurs (other, execution)</td><td>chmod o-x fichier</td></tr>
+      <tr><td>Ajouter les droits de lecture / écriture à tous (all)</td><td>chmod a+rw dossier</td></tr>
+      <tr><td>Ajouter les droits de lecture et d'exécution à tout ce que contient le repertoire dossier.</td><td>chmod -R a+rx files</td></tr>
+      <tr><td>Tous les droits pour le propriétaire (7xx), lecture et ecriture pour le groupe (x6x)<br />
+         et lecture uniquement pour les autres (xx4).</td><td>chmod 764 dossier</td></tr>
+      <tr><td>Donner au propriétaire tous les droits (7xx), alors que seuls les droits de lecture <br />
+        et d'accès seront donnés aux autres (x55). Grace à l'option -R ces droits seront appliqués à tous<br />
+         les fichiers et dossiers contenus dans ce répertoire.</td><td>chmod -R 755 dossier</td></tr>
+    </table>
+    <table>
+      <h2>ssh</h2>
+      <p>La commande ssh permet de se connecter de façon sécurisée à une machine distante.</p>
+      <tr><td>Connexion à la machine distante avec le login john.</td><td>ssh john@remotehost.example.com</td></tr>
+      <tr><td>Equivaut à la commande précédente.</td><td>ssh -l john remotehost.example.com</td></tr>
+      <tr><td>Génération d'une clé DSA (à faire sur la machine locale).</td><td>ssh-keygen -t dsa</td></tr>
+      <tr><td>Copie de la clé publique sur la machine distante.</td><td>ssh-copy-id -i ~/.ssh/id_dsa.pub john@remotehost.example.com</td></tr>
+    </table>
+    <table>
+      <h2>scp</h2>
+      <p>La commande scp permet de copier des fichiers entre le serveur et le client ssh de manière sécurisée.</p>
+      <tr><td>Transfère le fichier foo.txt situé dans le répertoire courant vers le home du compte john de la machine remotehost.example.com.</td><td>scp foo.txt john@remotehost.example.com:</td></tr>
+      <tr><td>Récupère le fichier foo.txt situé dans le home du répertoire du compte john pour le copier dans le répertoire courant.</td><td>scp john@remotehost.example.com:foo.txt ./</td></tr>
+      <tr><td>Récupérer les fichiers .sql situés dans le répertoire backups pour le copier dans le sous-répertoire backups.</td><td>scp john@remotehost.example.com:/backups/*.sql backups/</td></tr>
+      <tr><td>Récupérer les fichiers via un autre port (17654) que le port par défaut (22).</td><td>scp -P 17654 john@remotehost:/files/ files/</td></tr>
+      <tr><td>Transfère l'intégralité du répertoire mails.</td><td>scp -r mails/ john@remotehost:</td></tr>
+    </table>
+    <table>
+      <h2>rsync</h2>
+      <p>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+      <tr><td>  </td><td>   </td></tr>
+
+    </table>
+  </body>
+</html>
