@@ -1,4 +1,5 @@
 body{
+  text-align: center;
   background-color: #5E412F;
 }
 
@@ -57,5 +58,4 @@ p{
 img{
   max-width: 50%;
   max-height: 50%;
-  text-align: center;
 }

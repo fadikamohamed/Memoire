@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Git/Github</title>
   </head>
   <nav>
     <ul>
-      <li><a href="index.html">Ligne de commande</a></li>
+      <li><a href="index.html">Acceuil</a></li>
       <li><a href="commandes.html">Linux</a></li>
       <li><a href="nano.html">Nano</a></li>
       <li><a href="git.html">Git/Github</a></li>
       <li><a href="html.html">html</a></li>
+      <li><a href="css.html">css</a></li>
     </ul>
   </nav>
   <body>
@@ -23,117 +24,62 @@
         logiciels, utilisant le logiciel de gestion de versions Git.</p>
     <table>
       <h2>Gérer les dépots</h2>
-      <tr>
-        <td>Initialiser un depot</td><td>git init</td>
-      </tr>
-      <tr>
-        <td>Récupérer un depot deja existant</td><td>git clone git//depot<br />ou<br/>git clone https://depot</td>
-      </tr>
+      <tr><td>Initialiser un depot</td><td>git init</td></tr>
+      <tr><td>Récupérer un depot deja existant</td><td>git clone git//depot<br />ou<br />git clone https://depot</td></tr>
     </table>
     <table>
       <h2>État du dépot</h2>
-      <tr>
-        <td>Comparer 2 versions</td><td>git diff</td>
-      </tr>
-      <tr>
-        <td>Savoir tout ce qui n’a pas encore été validé </td><td>git status</td>
-      </tr>
-      <tr>
-        <td>Lister les commits effectués dans le dépot</td><td>git log</td>
-      </tr>
+      <tr><td>Comparer 2 versions</td><td>git diff</td></tr>
+      <tr><td>Savoir tout ce qui n’a pas encore été validé </td><td>git status</td></tr>
+      <tr><td>Lister les commits effectués dans le dépot</td><td>git log</td></tr>
     </table>
     <table>
       <h2>Gestion des fichiers</h2>
-      <tr>
-        <td>Versionner un fichier</td><td>git add nom_fichier_ou_dossier</td>
-      </tr>
-      <tr>
-        <td>Ajouter tout le contenu (fichier ou dossier) du dossier</td><td>git add --all *</td>
-      </tr>
-      <tr>
-        <td>Supprimer le fichier de l'ordinateur et du depot Git</td><td>git rm nom_fichier</td>
-      </tr>
-      <tr>
-        <td>Déplacer le fichier</td><td>git mv nom_fichier nouvelle_destination</td>
-      </tr>
+      <tr><td>Versionner un fichier</td><td>git add nom_fichier_ou_dossier</td></tr>
+      <tr><td>Ajouter tout le contenu (fichier ou dossier) du dossier</td><td>git add --all *</td></tr>
+      <tr><td>Supprimer le fichier de l'ordinateur et du depot Git</td><td>git rm nom_fichier</td></tr>
+      <tr><td>Déplacer le fichier</td><td>git mv nom_fichier nouvelle_destination</td></tr>
     </table>
     <table>
       <h2>Gestion des commits</h2>
-      <tr>
-        <td>Mettre a jour votre depot local</td><td>git pull</td>
-      </tr>
-      <tr>
-        <td>Créer un commit avec un commentaire</td><td>git commit -m "com"</td>
-      </tr>
-      <tr>
-        <td>Créer un commit contenant fichier et fichier2</td><td>git commit fichier1 fichier2</td>
-      </tr>
-      <tr>
-        <td>Créer un nouveau commit contenant tout les changements effectués sur les fichiers<br /> (git add n'est pas nécessaire avant cimmit -a)</td><td>git commit -a</td>
-      </tr>
-      <tr>
-        <td>Envoyer le commit dans la branche principale"master" du dépot "origin"</td><td>git push origin master</td>
-      </tr>
+      <tr><td>Mettre a jour votre depot local</td><td>git pull</td></tr>
+      <tr><td>Créer un commit avec un commentaire</td><td>git commit -m "com"</td></tr>
+      <tr><td>Créer un commit contenant fichier et fichier2</td><td>git commit fichier1 fichier2</td></tr>
+      <tr><td>Créer un nouveau commit contenant tout les changements effectués sur les fichiers<br />
+              (git add n'est pas nécessaire avant cimmit -a)</td><td>git commit -a</td></tr>
+      <tr><td>Envoyer le commit dans la branche principale"master" du dépot "origin"</td><td>git push origin master</td></tr>
     </table>
     <table>
       <h2>Commandes d'annulation</h2>
-      <tr>
-        <td> Annule les changements effectués depuis le dernier commit. </td><td> git reset –hard HEAD </td>
-      </tr>
-      <tr>
-        <td> Supprime le dernier commit. Cette action peut être répétée autant de fois que vous le désirez. </td><td> git reset –hard HEAD^ </td>
-      </tr>
-      <tr>
-        <td> Restaure le dépôt tel qu'il était lors du commit spécifié.</td><td> git revert commit </td>
-      </tr>
-      <tr>
-        <td colspan="2"> Pour que cette commande fonctionne, il faut que toutes les modifications soient commitées</td>
-      </tr>
+      <tr><td>Annule les changements effectués depuis le dernier commit.</td><td>git reset –hard HEAD </td></tr>
+      <tr><td>Supprime le dernier commit. Cette action peut être répétée autant de fois que vous le désirez.</td><td>git reset –hard HEAD^</td></tr>
+      <tr><td>Restaure le dépôt tel qu'il était lors du commit spécifié.</td><td>git revert commit</td></tr>
+      <tr><td colspan="2">Pour que cette commande fonctionne, il faut que toutes les modifications soient commitées</td></tr>
     </table>
     <table>
       <h2>Utilisation avancée</h2>
       <h3>Gestion des branches</h3>
-      <tr>
-        <td>Créer une nouvelle branche nommée "test"</td><td>git branch test</td>
-      </tr>
-      <tr>
-        <td>Lister les branches présentes dans le dépot</td><td>git branch</td>
-      </tr>
-      <tr>
-        <td>Changer de branche</td><td>git checkout nom_branche</td>
-      </tr>
-      <tr>
-        <td>Fusionner la branche courante avec la branche nommée nom_branche</td><td>git merge nom_branche</td>
-      </tr>
-      <tr>
-        <td>Abandonner la fusion</td><td>git reset --hard HEAD</td>
-      </tr>
+      <tr><td>Créer une nouvelle branche nommée "test"</td><td>git branch test</td></tr>
+      <tr><td>Lister les branches présentes dans le dépot</td><td>git branch</td></tr>
+      <tr><td>Changer de branche</td><td>git checkout nom_branche</td></tr>
+      <tr><td>Fusionner la branche courante avec la branche nommée nom_branche</td><td>git merge nom_branche</td></tr>
+      <tr><td>Abandonner la fusion</td><td>git reset --hard HEAD</td></tr>
     </table>
     <table>
       <h3>Récupération des changements</h3>
-      <tr>
-        <td></td><td></td>
-      </tr>
-      <tr>
-        <td></td><td></td>
-      </tr>
-      <tr>
-        <td></td><td></td>
-      </tr>
-        <td></td><td></td>
-      </tr>
-        <td></td><td></td>
-      </tr>
-        <td></td><td></td>
-      </tr>
-        <td></td><td></td>
-      </tr>
-        <td></td><td></td>
-      </tr>
-        <td></td><td></td>
-      </tr>
-        <td></td><td></td>
-      </tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
     </table>
   </body>
 </html>
