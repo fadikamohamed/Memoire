@@ -8,7 +8,7 @@
   <body>
   <nav>
     <ul>
-      <li><a href="index.html">Ligne de commande</a></li>
+      <li><a href="index.html"><img src</a></li>
       <li><a href="commandes.html">Linux</a></li>
       <li><a href="nano.html">Nano</a></li>
       <li><a href="git.html">Git/Github</a></li>
@@ -21,83 +21,864 @@
        balisage conçu pour représenter les pages web. C'est un langage permettant
        d'écrire de l'hypertexte, d'où son nom.</p>
     <h2>Liste des balises html5</h2>
-    <table>
+    <table id="ttableau">
+      <thead>
+        <tr>
+          <th>Balise HTML</th>
+          <th>Description</th>
+          <th>AF/E</th>
+          <th>Attribut</th>
+        </tr>
+      </thead>
       <tr>
-        <td>Commentaire</td>
-        <td>&lt!-...-&gt</td>
+        <!--<!DOCTYPE html>-->
+        <td>&lt!doctype&gt</td>
+        <td>Numéro de version du langage HTML utilisé.</td>
+        <td>AF</td>
+        <td></td>
       </tr>
       <tr>
-        <td>Déclaration du Doctype</td>
-        <td>&lt!DOCTYPE html&gt</td>
-      </tr>
-    </table>
-    <h3>Balise de premier niveau</h3>
-    <table>
-      <caption>Code minimal d'une page web</caption>
-      <tr>
-        <td>Indique au navigateur que le document est en HTML</td>
-        <td>&lthtml&gt</td>
+        <!--<!-- -->-->
+        <td>&lt!-- --&gt</td>
+        <td>Commentaire.</td>
+        <td>AF</td>
+        <td></td>
       </tr>
       <tr>
-        <td>En-tete de page</td>
+        <!--<abbr>-->
+        <td>&ltabbr&gt</td>
+        <td>Abréviation</td>
+        <td>E</td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<acronym>-->
+        <td>&ltacronym&gt</td>
+        <td>Acronyme</td>
+        <td>E</td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<address>-->
+        <td>&ltaddress&gt</td>
+        <td>URL sous forme textuel, sans utilisation de lien hypertexte (italique).</td>
+        <td>E</td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<a>-->
+        <td rowspan="5">&lta&gt</td>
+        <td rowspan="5">Création d'une ancre pour liens hypertexte.</td>
+        <td rowspan="5">E</td>
+        <td>href="http://..." : Hyperlien vers une page Web.</td>
+      <tr>
+        <td>href="ftp://..." : Hyperlien vers une adresse FTP.</td>
+      </tr>
+      <tr>
+        <td>href="telnet://..." : Hyperlien vers une adresse TelNet.</td>
+      </tr>
+      <tr>
+        <td>href="mailto:nom@domaine.com" : Hyperlien vers l'e-mail de nom@domaine.com.</td>
+      </tr>
+      <tr>
+        <td>href="nomdefichier" : Hyperlien vers un fichier local, si le fichier ne peut pas être<br />
+            affiché dans le navigateur, le fichier sera téléchargé.</td>
+      </tr>
+      <tr>
+        <!--<applet>-->
+        <td>&ltapplet&gt</td>
+        <td>Insertion d'un applet Java. (déconseillé)</td>
+        <td>E</td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<area>-->
+        <td>&ltarea&gt</td>
+        <td>Permet de définir une zone cliquable dans la page.</td>
+        <td>AF</td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<b>-->
+        <td>&ltb&gt</td>
+        <td>Gras</td>
+        <td>E</td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<base>-->
+        <td>&ltbase&gt</td>
+        <td>Définition de l'URL de la page HTML exploité en cas d'erreur de transmission.</td>
+        <td>AF</td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<basefont>-->
+        <td>&ltbasefont&gt</td>
+        <td>Définit la taille par défaut des caractères. (déconseillé)</td>
+        <td>AF</td>
+        <td>size=x : La taille par défaut des caractères sera de x.</td>
+      </tr>
+      <tr>
+        <!--<bdo>-->
+        <td>&ltbdo&gt</td>
+        <td>Changement de direction impossible.</td>
+        <td>E</td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<bgsound>-->
+        <td>&ltbgsound&gt</td>
+        <td>Insertion d'un fichier audio au format WAV ou MID (I.E. seulement).</td>
+        <td>AF</td>
+        <td>src="fichierson" : emplacement et nom du fichier son.</td>
+      </tr>
+      <tr>
+        <!--<big>-->
+        <td>&ltbig&gt</td>
+        <td>La taille de la police est augmenté de 1 point.</td>
+        <td>E</td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<blink>-->
+        <td>&ltblink&gt</td>
+        <td>Clignotement du texte (N.N. seulement).</td>
+        <td>E</td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<blockquote>-->
+        <td>&ltblockquote&gt</td>
+        <td>Petite marge à gauche.</td>
+        <td>E</td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<body>-->
+        <td rowspan="5">&ltbody&gt</td>
+        <td rowspan="5">Encadre le corps d'un fichier HTML.</td>
+        <td rowspan="5">E</td>
+        <td>bgcolor="couleur" : Couleur qui sera utilisé pour l'arrière plan.</td>
+      <tr>
+        <td>background="fichierimage" : Image d'arrière-plan (BMP, JPG ou GIF).</td>
+      </tr>
+      <tr>
+        <td>link="couleur" : Couleur des liens.</td>
+      </tr>
+      <tr>
+        <td>alink="couleur" : Couleur des liens déjà exploités.</td>
+      </tr>
+      <tr>
+        <td>vlink="couleur" : Couleur des liens lors du clic.</td>
+      </tr>
+      <tr>
+        <!--<br>-->
+        <td>&ltbr&gt</td>
+        <td>Saut de ligne.</td>
+        <td>AF</td>
+        <td>clear="left|right|all" : Le texte ou l'image suivante est décalé vers
+           le bas, jusqu'à ce qu'il n'y ait plus d'élément de formatage à gauche|à
+            droite|à gauche et à droite.</td>
+      </tr>
+      <tr>
+        <!--<button>-->
+        <td>&ltbutton&gt</td>
+        <td>Bouton dans un formulaire (I.E. seulement).</td>
+        <td>E</td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<caption>-->
+        <td>&ltcaption&gt</td>
+        <td>Titre de tableau.</td>
+        <td>E</td>
+        <td>align="left|center|right" : Alignement du titre à gauche|centré|à droite.</td>
+      </tr>
+      <tr>
+        <!--<center>-->
+        <td>&ltcenter&gt</td>
+        <td>Centrage. (déconseillé)</td>
+        <td>E</td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<cite>-->
+        <td>&ltcite&gt</td>
+        <td>Citation (italique).</td>
+        <td>E</td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<code>-->
+        <td>&ltcode&gt</td>
+        <td>Code source.</td>
+        <td>E</td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<col>-->
+        <td>&ltcol&gt</td>
+        <td>Définition d'une colonne d'un tableau (I.E. seulement).</td>
+        <td>AF</td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<colgroup>-->
+        <td>&ltcolgroup&gt</td>
+        <td>Regroupement de colonnes dans un tableau (I.E. seulement).</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<commment>-->
+        <td>&ltcommment&gt</td>
+        <td>Commentaire (I.E. seulement).</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<dd>-->
+        <td>&ltdd&gt</td>
+        <td>Définition d'un terme de glossaire (retrait) (encadré par &ltdl&gt).</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<del></del> -->
+        <td>&ltdel&gt</td>
+        <td>Information sur le document HTML.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<dfn></dfn>-->
+        <td>&ltdfn&gt</td>
+        <td>Texte sous forme logique. (déconseillé)</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<dir>-->
+        <td>&ltdir&gt</td>
+        <td>Liste à plusieurs dimensions.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<div>-->
+        <td rowspan="2">&ltdiv&gt</td>
+        <td rowspan="2">Implémente une feuille de style par bloc entier.</td>
+        <td rowspan="2"></td>
+        <td>id="[nom]" : Identifiant.</td>
+      </tr>
+      <tr>
+        <td> class="[nom]" : Classe.</td>
+      </tr>
+      <tr>
+        <!--<dl>-->
+        <td>&ltdl&gt</td>
+        <td>Structure d'un glossaire (encadre la balise &ltdt> et la balise &ltdd&gt).</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<dt>-->
+        <td>&ltdt&gt</td>
+        <td>Elément d'un glossaire (encadré par la balise &ltdl&gt).</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<em>-->
+        <td>&ltem&gt</td>
+        <td>Emphase (italique).</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<embed>-->
+        <td>&ltInsertion d'application multimédia.&gt</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<fieldset>-->
+        <td>&ltfieldset&gt</td>
+        <td>Regroupement de zone dans les formulaires.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<font>-->
+        <td rowspan="3">&ltfont&gt</td>
+        <td rowspan="3">Définition du texte. (déconseillé)</td>
+        <td rowspan="3"></td>
+        <td>size=x : Caractère de taille x (x compris entre 1 et 7).</td>
+      </tr>
+      <tr>
+        <td>size=+x|-x : Augmenter|Réduire la taille de caractère de x.</td>
+      </tr>
+      <tr>
+        <td>color="couleur" : définit la couleur du texte.</td>
+      </tr>
+      <tr>
+        <!--<form>-->
+        <td rowspan="2">&ltform&gt</td>
+        <td rowspan="2">Insertion d'un formulaire (encadre les balises &ltinput&gt, &lttextarea&gt, &ltselect&gt et &ltoption&gt).</td>
+        <td rowspan="2"></td>
+        <td>action="..." : Pour l'envoi par e-mail, remplacer ... par l'e-mail.</td>
+      </tr>
+      <tr>
+        <td> method="..." : Pour l'envoi par e-mail, remplacer... par "post".</td>
+      </tr>
+      <tr>
+        <!--<frame>-->
+        <td>&ltframe&gt</td>
+        <td>Insertion d'une nouvelle frame 'encadré par la balise &ltframeset&gt.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<frameset>-->
+        <td>&ltframeset&gt</td>
+        <td>Fichier d'index pour les frames, remplace la balise &ltbody&gt (encadre la balise &ltframe&gt).</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<h1>-->
+        <td>&lth1&gt</td>
+        <td>Titre de niveau 1.</td>
+        <td></td>
+        <td>align="center|left|right" : Titre centré|aligné à gauche|aligné à droite.</td>
+      </tr>
+      <tr>
+        <!--<h2>-->
+        <td>&lth2&gt</td>
+        <td>Titre de niveau 2.</td>
+        <td></td>
+        <td>align="center|left|right" : Titre centré|aligné à gauche|aligné à droite.</td>
+      </tr>
+      <tr>
+        <!--<h3>-->
+        <td>&lth3&gt</td>
+        <td>Titre de niveau 3.</td>
+        <td></td>
+        <td>align="center|left|right" : Titre centré|aligné à gauche|aligné à droite.</td>
+      </tr>
+      <tr>
+        <!--<h4>-->
+        <td>&lth4&gt</td>
+        <td>Titre de niveau 4.</td>
+        <td></td>
+        <td>align="center|left|right" : Titre centré|aligné à gauche|aligné à droite.</td>
+      </tr>
+      <tr>
+        <!--<h5>-->
+        <td>&lth5&gt</td>
+        <td>Titre de niveau 5.</td>
+        <td></td>
+        <td>align="center|left|right" : Titre centré|aligné à gauche|aligné à droite.</td>
+      </tr>
+      <tr>
+        <!--<h6>-->
+        <td>&lth6&gt</td>
+        <td>Titre de niveau 6.</td>
+        <td></td>
+        <td>align="center|left|right" : Titre centré|aligné à gauche|aligné à droite.</td>
+      </tr>
+      <tr>
+        <!--<head>-->
         <td>&lthead&gt</td>
+        <td>En-tête d'un fichier HTML (encadre les balises &lttitle&gt, &ltmeta&gt et &ltbase&gt).</td>
+        <td></td>
+        <td></td>
       </tr>
       <tr>
-        <td>Corps de la page</td>
-        <td>&ltbody&gt</td>
-      </tr>
-    </table>
-    <h3>Balise d'en-tete</h3>
-    <table>
-      <caption>Entre les balises &lthead&gt</caption>
-      <tr>
-        <td>Titre de la page, tres important pour le référencement</td>
-        <td>&lttitle&gt</td>
+        <!--<hr>-->
+        <td rowspan="5">&lthr&gt</td>
+        <td rowspan="5">Barre horizontale</td>
+        <td rowspan="5"></td>
+        <td>align="center|left|right" : Barre centré|aligné à gauche|aligné à droite.</td>
       </tr>
       <tr>
-        <td>Inserer script</td>
-        <td>&ltscript&gt</td>
+        <td>width=x%|y : Trait large de x pourcent|y pixels.</td>
       </tr>
       <tr>
-        <td>Inserer CSS</td>
-        <td>&ltstyle&gt</td>
+        <td>size=x : Hauteur du trait en pixels.</td>
       </tr>
       <tr>
-        <td>Message à afficher si le script n'est pas toleré</td>
+        <td>color="couleur" : Couleur de la barre (I.E. seulement).</td>
+      </tr>
+      <tr>
+        <td>noshade : Pas d'affichage ombré.</td>
+      </tr>
+      <tr>
+        <!--<html>-->
+        <td>&lthtml&gt</td>
+        <td>Obligatoire au début et à la fin du fichier HTML.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<i>-->
+        <td>&lti&gt</td>
+        <td>Italique.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<iframe>-->
+        <td>&ltiframe&gt</td>
+        <td>Cadre local (I.E. seulement).</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<img>-->
+        <td rowspan="6">&ltimg&gt</td>
+        <td rowspan="6">Insertion d'une image.</td>
+        <td rowspan="6"></td>
+        <td>src="nomdefichier" : emplacement et nom du fichier image (format bmp, jpg, gif).</td>
+      </tr>
+      <tr>
+        <td>align="top|middle|bottom|left|right" : aligner l'image en haut|au milieu|en bas|à gauche|à droite.</td>
+      </tr>
+      <tr>
+        <td>width=x : largeur de x pixels.</td>
+      </tr>
+      <tr>
+        <td>height=y : hauteur de y pixels.</td>
+      </tr>
+      <tr>
+        <td>border=x : bordure de x pixels.</td>
+      </tr>
+      <tr>
+        <td>alt="texte" : affiche ce texte lorsque l'image
+            n'est pas affichable ou lorsque la souris reste pointée dessus.</td>
+      </tr>
+      <tr>
+        <!--<input>-->
+        <td rowspan="5">&ltinput&gt</td>
+        <td rowspan="5">Nouvelle élément dans un formulaire.</td>
+        <td rowspan="5"></td>
+        <td>type="submit|reset|radio|checkbox : définit le type de l'élément : bouton "ENVOYER"|
+            bouton "EFFACER"|case d'option|case à cocher. Pour tous ces types, l'attribut value est obligatoire. Pour radio et checkbox, l'attribut name est obligatoire.</td>
+      </tr>
+      <tr>
+        <td>value="texte" : texte à afficher dans la case ou la zone de texte.</td>
+      </tr>
+      <tr>
+        <td>name="NomDeLélément" : nom donné à l'élément, chaque radio ou checkbox appartenant au
+            même groupe doivent possédé le même name, mais un value différent.</td>
+      </tr>
+      <tr>
+        <td>size=x : longueur x d'un champs de saisie d'une ligne, (pour le champ de saisie, seuls
+            les attributs size, name et maxlenght sont demandés.</td>
+      </tr>
+      <tr>
+        <td>maxlenght=y : longueur maximal d'un champ de saisie d'une ligne.</td>
+      </tr>
+      <tr>
+        <!--<ins>-->
+        <td>&ltins&gt</td>
+        <td>Fournit des informations sur le document.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<isindex>-->
+        <td>&ltsindex&gt</td>
+        <td>Définition d'un fichier de recherche (script CGI). (déconseillé)</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<kbd>-->
+        <td>&ltkbd&gt</td>
+        <td>Texte type "machine à écrire".</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<label>-->
+        <td>&ltlabel&gt</td>
+        <td>Extension de la balise &ltform&gt (I.E. seulement).</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<layer>-->
+        <td>&ltlayer&gt</td>
+        <td>Définition des couches (N.N. seulement).</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<legend>-->
+        <td>&ltlegend&gt</td>
+        <td>Légende de tableau.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<li>-->
+        <td>&ltli&gt</td>
+        <td>Elément d'une liste (encadré par la balise &ltul&gt ou la balise &ltol&gt).</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<link>-->
+        <td>&ltlink&gt</td>
+        <td>Lien indépendant du média.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<map>-->
+        <td>&ltmap&gt</td>
+        <td>Définit une zone cliquable.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<marquee>-->
+        <td>&ltmarquee&gt</td>
+        <td>Texte défilant (I.E. seulement).</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<menu>-->
+        <td>&ltmenu&gt</td>
+        <td>Liste de type menu. (déconseillé)</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<meta>-->
+        <td rowspan="4">&ltmeta&gt</td>
+        <td rowspan="4">Information sur la page HTML.</td>
+        <td rowspan="4"></td>
+        <td>name="description|keywords|author" : la description|les mots-clés|l'auteur seront
+           indiqués dans l'attribut content.</td>
+      </tr>
+      <tr>
+        <td> http-equiv="refresh" : provoque le chargement de la page indiqué dans l'attribut
+           url après x secondes indiqués dans l'attribut content. Si url est omis, la même page est rechargée.</td>
+      </tr>
+      <tr>
+        <td> content="nombre ou texte" : voir ci-dessus.</td>
+      </tr>
+      <tr>
+        <td> url="fichier" : voir l'attribut http-equiv.</td>
+      </tr>
+      <tr>
+        <!--<nextid>-->
+        <td>&ltnextid&gt</td>
+        <td>Indique le document suivant.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<nobr>-->
+        <td>&ltnobr&gt</td>
+        <td>Pas de passage automatique à la ligne sauf avec la balise <wbr>.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<noembed>-->
+        <td>&ltnoembed&gt</td>
+        <td>Encadre les éléments qui seront interprété si les applications multimédia ne sont pas acceptés par le navigateur.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<noframes>-->
+        <td>&ltnoframes&gt</td>
+        <td>Encadre les éléments qui seront interprétés si les frames ne sont pas accepté par la navigateur.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<noscript>-->
         <td>&ltnoscript&gt</td>
-      </tr>
-      <tr>
-        <td>URL !!!!!! A compléter !!!!!</td>
-        <td>&ltbase /&gt</td>
-      </tr>
-      <tr>
+        <td>Encadre les éléments qui seront interprété si les scripts ne sont pas acceptés par le navigateur.</td>
         <td></td>
-        <td>&lt &gt</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>&lt &gt</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>&lt &gt</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>&lt &gt</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>&lt &gt</td>
-      </tr>
-      <tr>
-        <td>&lt &gt</td>
         <td></td>
       </tr>
       <tr>
+        <!--<object>-->
+        <td>&ltobject&gt</td>
+        <td>Insertion d'objet (multimédia, applet Java...).</td>
         <td></td>
-        <td>&lt &gt</td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<ol>-->
+        <td>&ltol&gt</td>
+        <td>Liste numérotée (encadre la balise &ltli&gt).</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<option>-->
+        <td>&ltoption&gt</td>
+        <td>Nouvelle entrée dans une liste de choix.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<p>-->
+        <td>&ltp&gt</td>
+        <td>Début d'un paragraphe, saute 2 lignes.</td>
+        <td></td>
+        <td>align="center|left|right" : Paragraphe centré|aligné à gauche|aligné à droite.</td>
+      </tr>
+      <tr>
+        <!--<param>-->
+        <td>&ltparam&gt</td>
+        <td>Paramètre d'un objet inséré.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<pre>-->
+        <td>&ltpre&gt</td>
+        <td>Texte pré-formaté avec une police non-proportionnelle.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<q>-->
+        <td>&ltq&gt</td>
+        <td>Citation longue.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<s>-->
+        <td>&lts&gt</td>
+        <td>Texte barré.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<samp>-->
+        <td>&ltsamp&gt</td>
+        <td>Exemple en italique.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<script>-->
+        <td>&ltscript&gt</td>
+        <td>Insertion d'un script</td>
+        <td></td>
+        <td>language="javascript|vbscript" : Langage utilisé pour le script.</td>
+      </tr>
+      <tr>
+        <!--<select>-->
+        <td>&ltselect&gt</td>
+        <td>Liste de choix (encadre la balise &ltoption&gt et encadré par la balise &ltform&gt).</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<small>-->
+        <td>&ltsmall&gt</td>
+        <td>Réduit la taille des caractères de 1 point.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<span>-->
+        <td rowspan="2">&ltspan&gt</td>
+        <td rowspan="2">Implémente une feuille de style.</td>
+        <td rowspan="2"></td>
+        <td>id="[nom]" : Identifiant.</td>
+      </tr>
+      <tr>
+        <td>class="[nom]" : Classe.</td>
+      </tr>
+      <tr>
+        <!--<strike>-->
+        <td>&ltstrike&gt</td>
+        <td>Texte barré. (déconseillé)</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<strong>-->
+        <td>&ltstrong&gt</td>
+        <td>Texte en gras.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<style>-->
+        <td>&ltstyle&gt</td>
+        <td>Feuille de style (le plus souvent dans entre les balises &lthead&gt et &lt/head&gt).</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<sub>-->
+        <td>&ltsub&gt</td>
+        <td>Texte en indice.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<sup>-->
+        <td>&ltsup&gt</td>
+        <td>Texte en exposant.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<table>-->
+        <td rowspan="5">&lttable&gt</td>
+        <td rowspan="5">Tableau.</td>
+        <td rowspan="5"></td>
+        <td>cols=x : Tableau composé de x colonnes.</td>
+      </tr>
+      <tr>
+        <td>width=x%|y : Tableau large de x pourcent|de y pixels.</td>
+      </tr>
+      <tr>
+        <td>border=x : Taille de la bordure en pixels.</td>
+      </tr>
+      <tr>
+        <td>cellpadding=x : Espacement entre bordure et texte.</td>
+      </tr>
+      <tr>
+        <td>cellspacing=x : Espacement entre les cellules.</td>
+      </tr>
+      <tr>
+        <!--<tbody>-->
+        <td>&lttbody&gt</td>
+        <td>Regroupement de tableaux.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<td>-->
+        <td rowspan="5">&lttd&gt</td>
+        <td rowspan="5">Nouvelle cellule dans un tableau (encadré par la balise &lttr&gt).</td>
+        <td rowspan="5"></td>
+        <td>width="x%|y" : Cellule large de x pourcent|y pixels.</td>
+      </tr>
+      <tr>
+        <td>align="center|left|right" : Le texte compris dans les cellules est centré|aligné à gauche|aligné à droite.</td>
+      </tr>
+      <tr>
+        <td>colspan=x : x cellules à fusionner horizontalement.</td>
+      </tr>
+      <tr>
+        <td>rowspan=x : x cellules à fusionner verticalement.</td>
+      </tr>
+      <tr>
+        <td>bgcolor="couleur" : Couleur d'arrière-plan de la cellule.</td>
+      </tr>
+      <tr>
+        <!--<textarea>-->
+        <td rowspan="3">&lttextarea&gt</td>
+        <td rowspan="3">Champ de saisie de plusieurs lignes.</td>
+        <td rowspan="3"></td>
+        <td>name="nom" : Nom donné à la zone de texte.</td>
+      </tr>
+      <tr>
+        <td>rows=x : Zone de texte de largeur x.</td>
+      </tr>
+      <tr>
+        <td>cols=x : Zone de texte de longueur maximale x.</td>
+      </tr>
+      <tr>
+        <!--<tfoot>-->
+        <td>&lttfoot&gt</td>
+        <td>Regroupement de tableaux.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<th>-->
+        <td>&ltth&gt</td>
+        <td>Cellule d'en-tête d'un tableau.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<thead>-->
+        <td>&ltthead&gt</td>
+        <td>Regroupement de tableaux.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<title>-->
+        <td>&lttitle&gt</td>
+        <td>Titre du document HTML (à insérer dans la balise &lthead&gt).</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<tr>-->
+        <td rowspan="2">&lttr&gt</td>
+        <td rowspan="2">Nouvelle ligne d'un tableau (encadré par la balise &lttable&gt).</td>
+        <td rowspan="2"></td>
+        <td>height="x%|y" : Ligne large de x pourcent|y pixels.</td>
+      </tr>
+      <tr>
+        <td>bgcolor="couleur" : Couleur d'arrière-plan de la ligne.</td>
+      </tr>
+      <tr>
+        <!--<tt>-->
+        <td>&lttt&gt</td>
+        <td>Texte de type "machine à écrire".</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<u>-->
+        <td>&ltu&gt</td>
+        <td>Texte en souligné. (déconseillé)</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<ul>-->
+        <td>&ltul&gt</td>
+        <td>Liste non-numéroté (encadre la balise &ltli&gt).</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<var>-->
+        <td>&ltvar&gt</td>
+        <td>Texte sous forme de variable.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<wbr>-->
+        <td>&ltwbr&gt</td>
+        <td>Désactive temporairement la balise &ltnobr&gt.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!--<xmp>-->
+        <td>&ltxmp&gt</td>
+        <td>Texte sous forme d'exemple (italique). (obsolète)</td>
+        <td></td>
+        <td></td>
       </tr>
     </table>
+    <footer>CopyrightByMohamedFADIKA</footer>
   </body>
 </html>

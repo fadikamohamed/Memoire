@@ -2,7 +2,9 @@ body{
   text-align: center;
   background-color: #5E412F;
 }
-
+#ttableau{
+  max-width: 90%;
+}
 nav, body
 {
   margin: auto;
